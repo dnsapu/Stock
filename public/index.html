@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <title>Stock Price Checker</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- CSP exige que los estilos carguen desde 'self' -->
+    <link rel="stylesheet" href="/style.css" />
+  </head>
+  <body>
+    <main>
+      <h1>Stock Price Checker</h1>
+
+      <section class="card">
+        <h2>Consultar 1 stock</h2>
+        <form id="form-one">
+          <input name="stock" placeholder="AAPL" required />
+          <label><input type="checkbox" name="like" /> Like</label>
+          <button type="submit">Consultar</button>
+        </form>
+        <pre id="out-one"></pre>
+      </section>
+
+      <section class="card">
+        <h2>Consultar 2 stocks</h2>
+        <form id="form-two">
+          <input name="stock1" placeholder="GOOG" required />
+          <input name="stock2" placeholder="MSFT" required />
+          <label><input type="checkbox" name="like" /> Like a ambos</label>
+          <button type="submit">Consultar</button>
+        </form>
+        <pre id="out-two"></pre>
+      </section>
+    </main>
+
+    <!-- CSP exige que los scripts carguen desde 'self' -->
+    <script src="/client.js"></script>
+  </body>
+</html>
