@@ -18,7 +18,7 @@ app.use(
     directives: {
       defaultSrc: ["'self'"],
       scriptSrc: ["'self'"],
-      scriptSrc: ["'self'"],
+      styleSrc: ["'self'"],
     },
   }),
 );
