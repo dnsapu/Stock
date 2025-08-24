@@ -10,15 +10,12 @@ const apiRoutes = require("./routes/api");
 
 const app = express();
 
-app.use(helmet({ contentSecurityPolicy: false }));
-
 // Seguridad: Helmet + Content Security Policy mínimas exigidas por FCC
 app.use(
   helmet.contentSecurityPolicy({
+    useDefaults: false,
     directives: {
       defaultSrc: ["'self'"],
-      scriptSrc: ["'self'"],
-      scriptSrc: ["'self'"],
     },
   }),
 );
